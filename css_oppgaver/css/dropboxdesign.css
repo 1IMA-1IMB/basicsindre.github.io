@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3em;
+    background-color: #ffffff;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    gap: 1em;
+}
+.logoimg {
+    display: flex;
+    height: 3em;
+    width: auto;
+}
+.logotext {
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.maincontent {
+    display: flex;
+    background-color: #1e1919;
+    height: auto;
+}
+.textinfo {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header a:hover {
+    background-color: #f1eee8;
+}
+.globe {
+    margin-top: 15px;
+    display: flex;
+    height: 1.2em;
+}
+.komigang {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0160fe;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80%;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+}
+.maincontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.side1 {
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.side1title {
+    font-family: Helvetica;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 120%;
+    width: 550px;
+    text-align: center;
+}
+.side1text {
+    color: #f7f5f1; 
+}
+.side1undertext {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 120%;
+    width: 550px;
+    text-align: center;
+}
+.video {
+    margin-top: 40px;
+    width: 550px;
+}
+.finndinplan {
+    color: #1e1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 70px;
+    background-color: #3983ff;
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: Helvetica;
+}

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+.box {
+    display: flex;
+    height: 42.5em;
+    flex-direction: column;
+}
+.header {
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+.maincontent {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer {
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+.elg {
+    display: flex;
+    height: 20em;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    border: solid 1px black;
+    width: 35%;
+    height: 70%;
+    font-size: 12px;
+}

@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    height: 50em;
+}
+.mid {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+.header {
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+    width: 100%;
+}
+.sidemeny {
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 20%;
+    height: 100%;
+}
+.maincontent {
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 60%;
+    margin-top: 15%;
+}

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    height: 42.5em;
+}
+.header {
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+    width: 70%;
+}
+.sidemeny {
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 15%;
+    height: 100%;
+}
