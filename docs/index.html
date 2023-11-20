@@ -4,89 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="body">
-        <h1>Subscribe to Bhamas news letters!</h1>
-        <div class="forms">
-            <form action="Bhamas tur reklame/invitasjon.html">
-                <label for="email">E-mail</label><br>
-                <input type="email" id="email" name="email" autocomplete="on"><br><br>
-                <label for="region">Region</label>
-                <select name="Region" id="Region" disabled>
-                    <option value="none">currently disabled</option>
-                    <option value="Africa">Africa</option>
-                    <option value="Antartica">Antartica</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Europa">Europa</option>
-                    <option value="North America">North America</option>
-                    <option value="South America">South America</option>
-                    <option value="Oceania">Oceania</option>
-                </select><br><br>
-                <label for="country">Country</label><br>
-                <select name="country" id="country">
-                    <option value="none"></option>
-                    <option value="Albania">Albania</option>
-                    <option value="Andorra">Andorra</option>
-                    <option value="Austria">Austria</option>
-                    <option value="Belarus">Belarus</option>
-                    <option value="Belgium">Belgium</option>
-                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                    <option value="Bulgaria">Bulgaria</option>
-                    <option value="Croatia">Croatia</option>
-                    <option value="Cyprus">Cyprus</option>
-                    <option value="Czechia">Czechia</option>    
-                    <option value="Denmark">Denmark</option>
-                    <option value="Estonia">Estonia</option>
-                    <option value="Finland">Finland</option>
-                    <option value="France">France</option>
-                    <option value="Germany">Germany</option>
-                    <option value="Greece">Greece</option>
-                    <option value="Hungary">Hungary</option>
-                    <option value="Iceland">Iceland</option>
-                    <option value="Ireland">Ireland</option>
-                    <option value="Italy">Italy</option>
-                    <option value="Kosovo">Kosovo</option>
-                    <option value="Latvia">Latvia</option>
-                    <option value="Liechtenstein">Liechtenstein</option>
-                    <option value="Lithuania">Lithuania</option>
-                    <option value="Luxembourg">Luxembourg</option>
-                    <option value="Malta">Malta</option>
-                    <option value="Moldova">Moldova</option>
-                    <option value="Monaco">Monaco</option>
-                    <option value="Montenegro">Montenegro</option>
-                    <option value="Netherlands">Netherlands</option>
-                    <option value="North Macedonia">North Macedonia</option>
-                    <option value="Norway">Norway</option>
-                    <option value="Poland">Poland</option>
-                    <option value="Portugual">Portugual</option>
-                    <option value="Romania">Romania</option>
-                    <option value="Russia">Russia</option>
-                    <option value="San Marino">San Marino</option>
-                    <option value="Serbia">Serbia</option>
-                    <option value="Slovakia">Slovakia</option>
-                    <option value="Slovenia">Slovenia</option>
-                    <option value="Spain">Spain</option>
-                    <option value="Sweden">Sweden</option>
-                    <option value="Switzerland">Switzerland</option>
-                    <option value="Turkey">Turkey</option>
-                    <option value="Ukraine">Ukraine</option>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Vatican City">Vatican City</option>
-                </select><br><br>
-                <input type="checkbox" name="terms" id="terms" onclick="alert('Welcome to our extraordinary form website! By using our forms, you agree to the following whimsical terms: 1. Do not attempt to alter historical data or disrupt the digital space-time continuum; 2. In the event of zombies or supernatural glitches in our system, our digital safety net may not apply; 3. Please refrain from trying to communicate telepathically through our forms, predict stock market trends, or negotiate with virtual aliens; 4. Our website is not compatible with Martian browsers, so no off-world surfing; 5. Hoverboard racing on our website is discouraged, especially for the sake of your keyboard; 6. Regrettably, reptiles, dinosaurs, and other prehistoric pets are not suitable for form-filling; 7. We do not guarantee our forms will reveal winning lottery numbers or predict your future wealth; 8. Unauthorized wormhole creation or temporal rifts in our websites code are strictly prohibited; 9. We are not responsible for any virtual alien abductions try sending them digital hugs instead; 10. Our website does not offer psychic consultations, so if you see an error message, it is not a psychic prediction. In reality, please abide by any genuine and legally binding terms and conditions for using our website. Enjoy your form-filling adventure, and remember, even in the digital realm, time can fly!')" required>
-                <label for="checkbox">
-                    <a class="terms">By clicking this you agree to the terms and conditions</a>
-                </label><br>
-                <input type="submit" value="Submit">
-            </form>
+    <div class="header">
+        <div class="logo"><img class="logo" src="Images/logo.png"></div>
+        <div class="buttons">
+            <a>HJEM</a>
+            <a>KATEGORI</a>
+            <a>ARKIV</a>
+            <a>OM MEG</a>
+         </div>         
+        <div class="search"><input id="search" type="search" placeholder="SØK ..."></div>
+    </div>
+    <div class="content">
+        <div class="maincontent">
+            <div class="bloggname">GUTTA PÅ TUR</div>
+            <div class="img">
+                <img id="img" src="Images/hiking_photo_1.png">
+                <img id="img" src="Images/hiking_photo_2.png">
+                <img id="img" src="Images/hiking_photo_3.png">
+            </div>
+        </div>
+        <div class="blogg">
+            <div class="bloggcontent"></div>
+            <div class="dato"><h6>06.11.2023</h6></div>
+            <div class="title"><h4>VERDENS TUREN</h4></div>
+            <div class="texttype"><h6>BLOGG</h6></div>
+            <div class="text">
+                <p>
+                På min grenseløse odysse gjennom hvert hjørne av vår vakre verden, har jeg opplevd en livsreise som vil prege meg for alltid. La meg ta deg med på en reise gjennom tid og sted, hvor hvert land jeg besøkte ble en dypt gripende opplevelse. <br> <br>
+                Min reise startet i Nord-Amerika, der jeg vandret gjennom de mektige Grand Canyon-klippene, kjørte langs den legendariske Route 66, og utforsket de mystiske skogene i Pacific Northwest. I New Orleans, ble jeg omfavnet av den pulserende jazzmusikken, smakte på de krydret rettene, og danset bort natten i French Quarter. <br> <br>
+                Europa ønsket meg velkommen med sin rike historie og mangfoldige kulturer. I Paris gikk jeg langs Seinens bredder, besøkte Louvre-museet og smakte på delikate croissanter. I Roma følte jeg meg som en tidsreisende når jeg utforsket Colosseum og Vatikanet. I Amsterdam syklet jeg gjennom pittoreske kanaler og besøkte Anne Franks hus. <br> <br>
+                Da jeg krysset grensen til Asia, ble jeg overveldet av kontrastene og skjønnheten. I Kina utforsket jeg Den kinesiske mur og de gamle terrakottakrigerne i Xi'an. I India opplevde jeg fargerike festivaler, besøkte Taj Mahal, og lot meg fortrylle av kulturen og spiritualiteten. <br> <br>
+                Jeg vendte blikket mot det naturskjønne Indonesia, hvor jeg vandret gjennom Ubuds grønne rismarker, snorklet blant korallrevene på Gili-øyene, og ble en del av den lokale kulturen. I Australia utforsket jeg de imponerende Great Barrier Reef, gikk på eventyr i outbacken, og hørte på aboriginale fortellinger ved leirbålet. <br> <br>
+                Afrika tok meg med på en safari i Serengeti, hvor jeg var vitne til de majestetiske dyrene i sitt naturlige habitat. I Sør-Afrika besøkte jeg Table Mountain, opplevde kulturen til Zulu-stammen, og smakte på de lokale vinene i Stellenbosch. <br> <br>
+                Sør-Amerika var en symfoni av skjønnhet, fra de mektige Andesfjellene til Amazonas jungel. I Machu Picchu vandret jeg blant ruinene av det gamle Inkariket og følte en forbindelse til fortiden. I Brasil danset jeg samba i Rio de Janeiro og ble forført av Iguazu-fallene. <br> <br>
+                I Karibien sank jeg ned på hvite sandstrender og svømte i det krystallklare havet. Cuba brakte meg tilbake i tid med sin vakre gamle arkitektur og pulserende musikalske rytmer. <br> <br>
+                Midtøsten var et dypdykk i historien, fra pyramidene i Egypt til basarene i Marrakech. Jeg følte meg ydmyk ved Vestmuren i Jerusalem og undret meg over Persepolis i Iran. <br> <br>
+                Nå, tilbake til der min episke reise begynte, har jeg innsett at verden er en uendelig kilde til skatter og undere. Hver opplevelse har formet meg, og jeg bærer med meg en rikdom av minner som vil vare livet ut. Min globale odysse har lært meg at vår planet er en skatt som må verne om, og jeg ser frem til å fortsette å utforske den i all sin prakt.
+                </p>
+            </div>
+
         </div>
     </div>
+    <div class="footer">
+
+    </div>
 </body>
-</html> 
+</html>
