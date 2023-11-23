@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10svh;
+    background-color: rgb(209, 209, 209);
+}
+.main {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    margin: 5%;
+    background-color: rgb(221, 221, 221);
+}
+.picture {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+}
+#picture {
+    display: flex;
+    width: 25svh;
+    height: 25svh;
+    background-color: rgb(235, 235, 235);
+}
+.row1 {
+    display: flex;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+.row2 {
+    display: flex;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+.row3 {
+    display: flex;
+    gap: 10%;
+    margin-bottom: 5%;
+}

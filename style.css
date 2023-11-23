@@ -5,16 +5,22 @@ body {
 }
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: rgb(225, 225, 225);
     width: 100%;
-    font-family: Dela Gothic One;
+    height: 10svh;
+    font-family: Russo One;
     font-size: 125%;
+}
+.buttons {
+    display: flex;
+    width: 35%;
+    gap: 10%;
 }
 .main {
     display: flex;
-    background-color: #fafafa;
+    background-color: rgb(240, 240, 240);
     width: 100%;
     height: 100svh;
     font-family: Dela Gothic One;
@@ -29,4 +35,18 @@ body {
 .links {
     display: flex;
     flex-direction: column;
+}
+.user {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    gap: 10px;
+    margin-left: 25px;
+}
+#user {
+    height: 45px;
+    border: black 1px solid;
+    border-radius: 10em;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
 }
