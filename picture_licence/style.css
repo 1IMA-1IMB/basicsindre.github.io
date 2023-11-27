@@ -1,5 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a :hover {
+    text-decoration: underline;
 }
 .header {
     display: flex;
@@ -45,4 +55,18 @@ body {
     display: flex;
     gap: 10%;
     margin-bottom: 5%;
+}
+.licence {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    margin: 5%;
+    background-color: rgb(221, 221, 221);
+}
+.title {
+    display: flex;
+    justify-content: center;
 }
