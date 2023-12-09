@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sindres portefølje i KP</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="script2.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Dela+Gothic+One&family=Lilita+One&family=Rajdhani:wght@300&family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
-    <div class="user"><img id="user" src="Images/user.png">Sindre</div>
-    <div class="buttons">
-        <a href="#ommeg">Om meg</a>
-        <a href="#prosjektene">Prosjekter</a>
-        <a href="#sosiale">Sosiale Medier</a>
-    </div>
+        <div class="user"><img id="user" src="Images/user.png">Sindre</div>
+        <div class="buttons">
+            <a class="active" href="javascript:void(0)" href="#ommeg">Om meg</a>
+            <a href="javascript:void(0)" href="#prosjektene">Prosjekter</a>
+            <div href="javascript:void(0)" class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Socials</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="https://github.com/BasicSindre">Github</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="main">
+        <div id="heroimage">
+            <video class="video" src="Images/animated.mp4" autoplay loop></video>
+        </div>
         <div id="ommeg">
             <div>
                 <h2 class="overskrift">Om Meg</h2>
@@ -37,9 +47,6 @@
                 <a href="nettavis/">• nettavis</a>
                 <a href="picture_licence/">• picture licence</a>
             </h6>
-        </div>
-        <div id="sosiale">
-            <a href="https://github.com/BasicSindre"><img src="Images/GitHub_Invertocat_Logo.svg.png"></a>
         </div>
     </div
 </body>
