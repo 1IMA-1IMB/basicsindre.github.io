@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sindres portefølje i KP</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <link rel="stylesheet" href="script2.js">
+    <link rel="stylesheet" href="main.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Dela+Gothic+One&family=Lilita+One&family=Rajdhani:wght@300&family=Russo+One&display=swap" rel="stylesheet">
@@ -15,14 +14,16 @@
     <div class="header">
         <div class="user"><img id="user" src="Images/user.png">Sindre</div>
         <div class="buttons">
-            <a class="active" href="javascript:void(0)" href="#ommeg">Om meg</a>
-            <a href="javascript:void(0)" href="#prosjektene">Prosjekter</a>
-            <div href="javascript:void(0)" class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Socials</button>
-                <div id="myDropdown" class="dropdown-content">
-                <a href="https://github.com/BasicSindre">Github</a>
+            <a href="#ommeg">Om meg</a>
+            <a href="#prosjektene">Prosjekter</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Socials
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Github</a>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
     <div class="main">
@@ -32,7 +33,7 @@
         <div id="ommeg">
             <div>
                 <h2 class="overskrift">Om Meg</h2>
-                <h6 class="">Hei, mitt navn er Sindre og jeg går infomarsjonteknologi og medie produksjon på drømtorp vgs</h6>
+                <h6 class=""></h6>
             </div>
         </div>
         <div id="prosjektene">
@@ -51,3 +52,20 @@
     </div
 </body>
 </html>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+        }
+    }
+    }
+</script>
