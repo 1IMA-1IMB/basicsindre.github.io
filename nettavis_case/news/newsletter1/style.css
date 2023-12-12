@@ -212,6 +212,7 @@ body {
     display: flex;
     width: 60%;
     font-size: 1.25em;
+    margin-bottom: 5%;
 }
 .footer {
     display: flex;
@@ -436,6 +437,7 @@ body {
         display: flex;
         width: 80%;
         font-size: 1em;
+        margin-bottom: 5%;
     }
     .footer {
         display: flex;
