@@ -95,7 +95,7 @@ body {
 #menu {
     width: auto;
     height: 2em;
-    display: flex;
+    display: none;
     align-items: center;
 }
 .dropdown {
@@ -216,6 +216,15 @@ body {
 }
 .newsletterimg {
     width: 50%;
+}
+.originalnews {
+    text-decoration: none;
+    color: black;
+    font-size: 125%;
+}
+.originalnews :hover {
+    color: blue;
+    text-decoration: underline;
 }
 .footer {
     display: flex;
@@ -444,6 +453,15 @@ body {
     }
     .newsletterimg {
         width: 75%;
+    }
+    .originalnews {
+        text-decoration: none;
+        color: black;
+        font-size: 125%;
+    }
+    .originalnews :hover {
+        color: blue;
+        text-decoration: underline;
     }
     .footer {
         display: flex;

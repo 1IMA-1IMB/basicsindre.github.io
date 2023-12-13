@@ -24,23 +24,29 @@
                 <input type="search" autocomplete="off" placeholder="Search..." aria-label="Search" name="q" class="searchinput">
             </form>
             <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()"><img src="Images/user.png" id="user">
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                  <a href="#">Profile</a>
-                </div>
-            </div> 
-            <div class="dropdown2">
-                <button class="dropbtn2" onclick="myFunction2()">
-                  <i class="fa fa-caret-down2"><img src="Images/more.png" id="menu"></i>
-                </button>
-                <div class="dropdown-content2" id="myDropdown2">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-            </div> 
+              <button class="dropbtn">
+                <img src="Images/user.png" id="user">
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                <img src="Images/more.png" id="menu">
+              </button>
+              <div class="dropdown-content">
+                <a href="#"><form class="search2">
+                  <span class="searchicon2">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <path d="M6.75 1a5.75 5.75 0 0 1 4.53 9.291l3.515 3.514a.7.7 0 0 1-.99.99l-3.514-3.515A5.75 5.75 0 1 1 6.75 1Zm0 1.5a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5Z"></path>
+                      </svg>
+                  </span>
+                  <input type="search" autocomplete="off" placeholder="Search..." aria-label="Search" name="q" class="searchinput2">
+              </form></a>
+                <a href="#"><img src="Images/user.png" id="user2"></a>
+              </div>
+            </div>
         </div>
     </div>
     <div class="content">
@@ -72,31 +78,4 @@
     </div>
 </body>
 </html>
-<script>
-    function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-    }
-  }
-    function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-    }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn2')) {
-    var myDropdown = document.getElementById("myDropdown2");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-    }
-  }
-</script>
+

@@ -95,7 +95,7 @@ body {
 #menu {
     width: auto;
     height: 2em;
-    display: flex;
+    display: none;
     align-items: center;
 }
 .dropdown {
@@ -213,6 +213,15 @@ body {
     width: 60%;
     font-size: 1.25em;
     margin-bottom: 5%;
+}
+.originalnews {
+    text-decoration: none;
+    color: black;
+    font-size: 125%;
+}
+.originalnews :hover {
+    color: blue;
+    text-decoration: underline;
 }
 .footer {
     display: flex;
@@ -438,6 +447,15 @@ body {
         width: 80%;
         font-size: 1em;
         margin-bottom: 5%;
+    }
+    .originalnews {
+        text-decoration: none;
+        color: black;
+        font-size: 125%;
+    }
+    .originalnews :hover {
+        color: blue;
+        text-decoration: underline;
     }
     .footer {
         display: flex;
