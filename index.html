@@ -5,67 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sindres portefølje i KP</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.js">
+    <script href="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Bebas+Neue&family=Dela+Gothic+One&family=Lilita+One&family=Rajdhani:wght@300&family=Russo+One&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="header">
-        <div class="user"><img id="user" src="Images/user.png">Sindre</div>
-        <div class="buttons">
-            <a href="#ommeg">Om meg</a>
-            <a href="#prosjektene">Prosjekter</a>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Socials
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                  <a href="#">Github</a>
-                </div>
-            </div> 
-        </div>
+<body class="dark-mode">
+    <div class="header container">
+        <div class="user"><h2>Sindre M. Øverby</h2></div>
     </div>
-    <div class="main">
-        <div id="heroimage">
-            <video class="video" src="Images/animated.mp4" autoplay loop></video>
+    
+    <div class="content container">
+        <div class="frontpage">
+            <div class="ball"></div>
+            <div class="ball2"></div>
+            <div class="ball3"></div>
+            <div class="buttons">
+                <a class="button prosjekter" href="#prosjekter">Prosjekter</a>
+                <a class="button ommeg" href="#ommeg">Om meg</a>
+                <a class="button sosiale">Sosiale Medier</a>
+            </div>  
         </div>
-        <div id="ommeg">
+        <div class="section" id="ommeg">
             <div>
-                <h2 class="overskrift">Om Meg</h2>
-                <h6 class=""></h6>
+                <h2>Om Meg</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni at saepe assumenda quaerat omnis magnam optio, consequatur nihil fugiat quia fuga ea obcaecati eius unde qui itaque sit laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam repudiandae eos cumque, nam quasi veritatis praesentium totam, consectetur maxime vitae aliquam repellat dolore accusantium labore, dolorem quae laudantium. Maxime! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores cumque, animi vitae debitis dicta repellat corporis voluptates, autem, ut officiis porro aliquam! Assumenda aperiam soluta, deleniti a consequuntur animi vero?</p>
+                
             </div>
         </div>
-        <div id="prosjektene">
-            <h4>• Liste over alle prosjektene</h4>
-            <h6 class="links">
-                <a href="blogg/">• blogg</a>
-                <a href="css_oppgaver/">• css_oppgaver</a>
-                <a href="css_oppgaver/dropboxdesign.html">• dropboxdesign</a>
-                <a href="forms/">• forms</a>
-                <a href="html_intro/">• html intro</a>
-                <a href="MediaQuery/">• media query</a>
-                <a href="nettavis/">• nettavis</a>
-                <a href="picture_licence/">• picture licence</a>
-            </h6>
+        <div class="section" id="prosjekter">
+            <h2>Prosjekter</h2>
         </div>
-    </div
+    </div>
 </body>
 </html>
-<script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-        }
-    }
-    }
-</script>
