@@ -2,16 +2,22 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    align-items: top;
-    justify-content: center;
+    font-family: General Sans,sans-serif;
+    background-color: #092635;
+    color: #9EC8B9;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
 }
-.dark-mode {
-    background-color: #092635;
-    color: white;
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.light-mode {
+    background-color: #F9F5F6;
+    
 }
 /* Header */
 .header {
@@ -63,16 +69,16 @@ a {
     justify-content: center;
     height: 10%;
     width: 10rem;
-    background-color: rgb(146, 146, 146, 0.9);
+    background-color: rgb(158, 200, 185, 0.9);
+    color: #092635;
     border-radius: 5%;
     border: 1px #eeeeee;
     font-family: Dela Gothic One;
-    color: #ffffff;
     z-index: 2;
     transition: all 0.3s;
 }
 .buttons :hover {
-    background-color: rgba(146, 146, 146, 0.5);
+    background-color: rgba(158, 200, 185, 0.5);
     transform: translateY(-10px);
 }
 .ball {
@@ -133,6 +139,32 @@ a {
     margin: 10%;
 }
 #prosjekter {
+    display: flex;
+    justify-content: center;
+    height: 100svh;
+    overflow: hidden;
+}
+#prosjekter h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+}
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    transform: translate(0%, 40%); 
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+  }
+  
+#sosiale {
     display: flex;
     justify-content: center;
     font-size: 125%;
