@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <label>Hvor mange <span id="tempname">...</span> er det?</label> <br>
+        <input id="inputFahrenheit" type="number" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+        <select id="temp" name="temp">
+            <option value="celcius">celcius</option>
+            <option value="fahrenheit">fahrenheit</option>
+        </select>
+      </p>
+      <p>Det er <span id="celcius">...</span></p>
+    <script src="converter.js"></script>
+</body>
+</html>

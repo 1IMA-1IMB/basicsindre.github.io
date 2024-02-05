@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #ff9800;
+    color: white;
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    color: black;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 15svh;
+    background-color: white;
+
+}
+.logo {
+    display: flex;
+    height: 15svh;
+    width: 100%;
+    gap: 1%;
+    box-shadow: 0 8px 16px 0 rgb(196, 196, 196);
+}
+.logoimg {
+    display: flex;
+    width: 10%;
+    height: 15svh;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+#img {
+    height: 70%;
+}
+.logotext {
+    display: flex;
+    height: 15svh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: Dela Gothic One;
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: url(images/Aerial_Beach_View_Free_Vector.jpg);
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.form-conteiner {
+    display: flex;
+    height: 80svh;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 0 64px 0 rgb(196, 196, 196);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5%;
+}
+.form-title {
+    font-size: 150%;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.agerange {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: left;
+}
+.heightrange {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.weightrange {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}

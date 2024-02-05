@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Alert!</strong> Denne siden er ikke ferdig.
+    </div>
+    <div class="header">
+        <div class="logo">
+            <a class="logoimg" href="">
+                <img id="img" src="images/otter.png">
+            </a>
+            <a class="logotext" href="">
+                <h2>Otter Calculator</h2>
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-conteiner">
+            <div class="form">
+                <div class="form-title"><h2>Calculate how many otters you are worth:</h2></div>
+                <div class="agerange">
+                    <h4>Enter your age:</h4>
+                    <div class="inputs">
+                        <input type="range" min="14" max="100" value="18" oninput="displaySliderValue(this);">
+                        <span>18</span>
+                    </div>
+                </div>
+                <div class="heightrange">
+                    <h4>Whats your height?</h4>
+                    <input type="range" min="120" max="220" value="160" oninput="displaySliderValue(this);">
+                    <span>160</span>
+                </div>
+                <div class="weightrange">
+                    <h4>How much do you weigh?</h4>
+                    <input type="range" min="40" max="100" value="60" oninput="displaySliderValue(this);">
+                    <span>60</span>
+                </div>
+            </div>
+        <div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
