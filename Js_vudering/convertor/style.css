@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.header {
+    background-color: #fff;
+    height: 10svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home {
+    fill: black;
+}
+#home:hover {
+    fill: #3498db;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90svh;
+}
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.converter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container, .converter-symbol {
+    text-align: center;
+}
+
+.input-container {
+    margin: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+#fromUnit, #toUnit {
+    background-color: #ecf0f1;
+    width: 101%;
+    height: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+#toValue, #fromValue {
+    background-color: #ecf0f1;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.converter-symbol {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.converter-symbol:hover {
+    color: #3498db;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.container {
+        width: 90%;
+    }
+}

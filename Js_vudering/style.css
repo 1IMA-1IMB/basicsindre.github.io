@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Electrolize);
+
+:root {
+    --btn-color: #920000; 
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+    color: var(--btn-color);
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100svh;
+	background-color: #fff;
+    gap: 5rem;
+    overflow-y: hidden;
+}
+
+.menyknapp {
+	position: relative;
+	font-family: 'Electrolize', sans-serif;
+	font-size: 1rem;
+    font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
+	line-height: 1;
+	color: var(--btn-color);
+	margin: 0;
+	padding: 1rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		color: lighten(var(--btn-color), 20%);
+	}
+	&:focus {
+		color: lighten(var(--btn-color), 10%);
+		outline: none;
+	}
+	&:active {
+		color: var(--btn-color);
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+	}
+
+	&:before {
+		top: 0;
+		left: 0;
+		box-shadow: inset 2px 2px 0 0 var(--btn-color);
+	}
+	&:after {
+		right: 0;
+		bottom: 0;
+		box-shadow: inset -2px -2px 0 0 var(--btn-color);
+	}
+	
+}
+
+.menyknapp:hover {
+	&:before {
+		animation: hoverShadowBefore 1s forwards;
+	}
+	&:after {
+		animation: hoverShadowAfter 1s forwards;
+	}
+}
+
+@keyframes hoverShadowBefore {
+  	0% {
+    	width: 100%;
+		height: 2px;
+		
+		top: 0;
+		left: 0;
+  	}
+  	33% {
+   	width: 2px;
+		height: 100%;
+		
+		top: 0;
+		left: 0;
+  	}
+	66% {
+		width: 2px;
+		height: 2px;
+		
+		top: calc(100% - 2px);
+		left: 0;
+	}
+	100% {
+   	width: 100%;
+		height: 2px;
+		
+		top: calc(100% - 2px); 
+		left: 0;
+  	}	
+}
+
+@keyframes hoverShadowAfter {
+  	0% {
+    	width: 100%;
+		height: 2px;
+  	}
+  	33% {
+   	width: 2px;
+		height: 100%;
+		
+		bottom: 0;
+		right: 0;
+  	}
+	66% {
+		width: 2px;
+		height: 2px;
+		
+		bottom: calc(100% - 2px);
+		right: 0;
+	}
+	100% {
+   	width: 100%;
+		height: 2px;
+		
+		bottom: calc(100% - 2px);
+		right: 0;
+  	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		flex-direction: column;
+	}
+}

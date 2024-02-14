@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html">
+            <svg id="home" width="32px" height="32px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4498 10.275L11.9998 3.1875L2.5498 10.275L2.9998 11.625H3.7498V20.25H20.2498V11.625H20.9998L21.4498 10.275ZM5.2498 18.75V10.125L11.9998 5.0625L18.7498 10.125V18.75H14.9999V14.3333L14.2499 13.5833H9.74988L8.99988 14.3333V18.75H5.2498ZM10.4999 18.75H13.4999V15.0833H10.4999V18.75Z"></path> </g></svg>
+        </a>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Unit Converter</h1>
+            <div class="converter-container">
+                <div class="input-container">
+                    <label for="fromValue">Skriv inn tallet:</label>
+                    <select id="fromUnit">
+                        <option value="3.78541">Gallons</option>
+                        <option value="0.0295735">Ounces</option>
+                        <option value="0.236588">Cups</option>
+                        <option value="0.0147868">Spiseskjeer</option>
+                        <option value="1">Liters</option>
+                    </select>
+                    <input type="number" id="fromValue" placeholder="Skriv inn tallet" oninput="convertValue()">
+                </div>
+                <div class="converter-symbol" onclick="swapUnits()">&#8644;</div>
+                <div class="input-container">
+                    <label for="toValue">Resultat:</label>
+                    <select id="toUnit">
+                        <option value="1">Liters</option>
+                        <option value="3.78541">Gallons</option>
+                        <option value="0.0295735">Ounces</option>
+                        <option value="0.236588">Cups</option>
+                        <option value="0.0147868">Spiseskjeer</option>
+                    </select>
+                    <input type="text" id="toValue" readonly>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
